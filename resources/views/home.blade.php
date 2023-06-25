@@ -9,6 +9,7 @@
     <body>
         @include('partials.header')
         @include('partials.products')
+        @include('partials.footer')
         {{-- <img src="{{ Vite::asset('resources/img/picsum30.jpg') }}" alt=""> --}}
     </body>
 </html>

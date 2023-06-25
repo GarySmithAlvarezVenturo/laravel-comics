@@ -74,7 +74,7 @@ main {
     }
 }
 
-.card {
+.personal_card {
     width: calc((100% / 6) - 1rem);
     margin: 1.5rem 0.5rem;
     .img_container {
@@ -94,7 +94,110 @@ main {
         margin-top: 0.3rem;
     }
 }
-.card:hover {
+.personal_card:hover {
     cursor: pointer;
+    opacity: 0.5;
+}
+
+footer ul {
+    list-style: none;
+    line-height: 21px;
+    a {
+        cursor: pointer;
+        color: grey;
+        text-decoration: none;
+        &:hover {
+            color: rgb(180, 180, 180);
+            text-decoration: underline;
+        }
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.nav_footer {
+    background-color: #0282f9;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    .blu_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            cursor: pointer;
+            img {
+                height: 2.4rem;
+            }
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.main_footer {
+    background-image: url(../images/footer-bg.jpg);
+    color: white;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    img {
+        height: 30rem;
+        margin-left: 13rem;
+        position: absolute;
+        top: -33px;
+        right: 21rem;
+    }
+}
+.container-f {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 6rem 0;
+    li:first-child {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+}
+.first-column {
+    li:nth-child(9) {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+}
+
+.foo_footer {
+    background-color: #303030;
+    padding: 1rem 0;
+    .cont_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .sign_up {
+            color: white;
+            text-decoration: none;
+            border: 1px solid #0282f9;
+            padding: 0.6rem;
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.5);
+            }
+        }
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social li:not(:first-child) a:hover {
     opacity: 0.5;
 }
